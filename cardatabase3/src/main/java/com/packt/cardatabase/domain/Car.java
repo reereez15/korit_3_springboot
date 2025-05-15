@@ -1,4 +1,4 @@
-package com.example.cardatabase2.domain;
+package com.packt.cardatabase.domain;
 
 import jakarta.persistence.*;
 
@@ -13,7 +13,7 @@ public class Car {
     private int modelYear, price;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "owner")
+    @JoinColumn(name = "owner")         // 조언할 때 컴럼인데 컬럼명을 owner로 짓겠다는 의미
     private Owner owner;
 
     public Car() {}
