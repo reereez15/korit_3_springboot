@@ -44,7 +44,7 @@ public class CardatabaseApplication implements CommandLineRunner{
 		}
 
 		// 사용자 명 : user, 비밀번호: user
-		uRepository.save(new AppUser("user", "$2y$04$sR5AcWpLJZEpbHipoj4TU.hx7BBNYQUR1Xh9hvbx5uvFcCNJdA1pq", "USER"));
+		uRepository.save(new AppUser("user", "$2y$04$SX2ShxwUvNWSQ0SjEn9VduDQwVKv1eWiAv91RuTQMZ1a0jCEOZ5Ma", "USER"));
 		// 사용자 명 : admin, 비밀번호 : admin
 		uRepository.save(new AppUser("admin","$2y$04$SX2ShxwUvNWSQ0SjEn9VduDQwVKv1eWiAv91RuTQMZ1a0jCEOZ5Ma", "ADMIN"));
 	}

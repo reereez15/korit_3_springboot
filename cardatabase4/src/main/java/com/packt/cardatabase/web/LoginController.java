@@ -35,7 +35,7 @@ public class LoginController {
 
         // 생성된 토큰으로 응답을 빌드
         return ResponseEntity.ok().header(HttpHeaders.AUTHORIZATION,
-                "Bearer " + jwts).header(
+                "Bearer" + jwts).header(
                         HttpHeaders.ACCESS_CONTROL_EXPOSE_HEADERS,
                 "Authorization").build();
     }
